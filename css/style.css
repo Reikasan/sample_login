@@ -1,0 +1,180 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+button:focus {
+    outline: 0 !important;
+}
+
+/* navigation */
+nav {
+    z-index: 50;
+    font-family: 'Engagement', cursive;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+}
+
+#logo, #login, #logout  {
+    text-shadow: 1px 1px 3px #283618;
+    font-size: 3rem;
+    color: rgb(240, 239, 235);
+    transition: text-shadow 0.3s;
+}
+
+#logo:hover, #login:hover, #logout:hover {
+    text-shadow: 1px 1px 1px #000, 3px 3px 10px #aaa;
+}
+
+.mr-auto .nav-item {
+    margin-left: 10px;
+    padding: 0 10px;
+    font-size: 1.8rem;
+}
+
+.deco {
+    color: rgba(240, 239, 235, 0.8);
+    transition: color 0.3s;
+    padding-right: 10px;
+}
+    
+.deco:hover {
+    color: rgb(240, 239, 235);
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: transparent !important;
+}
+
+.navbar-toggler-icon {
+    width: 2em;
+    height: 2em;
+}
+
+/* modal */
+.modal {
+    font-family: 'Courier Prime', monospace;
+}
+
+.modal-header {
+    text-align: center;
+    border-bottom: none;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.modal-body>p {
+    color: red;
+}
+
+.fa-exclamation {
+    margin-right: 10px;
+}
+.alternative {
+    text-align: center;
+    margin: 20px 20px;
+    line-height: 0.8;
+}
+
+.alternative a {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 10px;
+    color: #FFC40D;
+    text-decoration: none;
+    transition: transform 0.5s 0.1s;
+}
+
+.alternative a:hover {
+    color: #FFC40D;
+    transform: scale(1.2);
+}
+
+.fa-lock, .fa-lock-open {
+    position: relative;
+    bottom: 28px;
+    left: 92%;
+    cursor: pointer;
+}
+
+.modal-footer .btn, #logoutModal .btn {
+    border: solid 1px #ced4da;
+    color: #000;
+    transition: background-color 0.3s;
+    width: 80px;
+    height: 40px;
+}
+
+#logoutBtn {
+    width: 140px !important;
+    padding: 0 !important;
+}
+
+#loginBtn, #signup {
+    width: auto;
+    padding: 0;
+}
+
+#logoutModal .btn {
+    margin: 20px 10px;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+}
+
+.modal-footer .btn a, #logoutModal .btn a {
+    color: #000;
+    padding: 6px 12px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.modal-footer .btn:hover, #logoutModal .btn:hover {
+    background-color: #ffc40d;
+    color: #fff;
+    border: none;
+}
+
+.modal-footer .btn:hover a, #logoutModal .btn:hover a  {
+    color: #fff;
+    text-decoration: none;
+}
+
+#logoutModal .modal-content {
+    width: 400px;
+    padding: 30px 10px;
+}
+
+
+/* footer */
+footer {
+    z-index: 20;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+}
+
+footer small {
+    color: #000;
+    text-shadow: 1px 1px 5px #aaa;
+    margin: 0 auto;
+}
+
+
+/* Media Query */
+@media only screen and ( max-width : 992px ) {
+    .deco {
+        background: linear-gradient(transparent 15%, #283618 80%);
+    }
+}
+
+@media only screen and ( max-width : 500px ) {
+    #logo, #login, #logout {
+        font-size: 2.5rem;
+    }
+}
+
